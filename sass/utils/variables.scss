@@ -73,7 +73,7 @@ Animation
 */
 
 .loading-spinner {
-  background-color: $color-dark;
+  background-color: $colour-primary;
   position: fixed;
   top: 0;
   left: 0;
@@ -130,7 +130,7 @@ Animation
     fill: $color-white;
   }
   to {
-    fill: $colour-primary;
+    fill: $colour-secondary;
   }
 }
 

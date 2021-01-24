@@ -4,8 +4,8 @@
   "description": "Oh my food projet",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/style.scss:.public/css/style.css --style expanded",
-    "prefix": "postcss ./public/css/style.css --use autoprefixer -d./public/css/prefixed/"
+    "sass": "sass --watch ./sass/style.scss:.public/css/style.css --style expanded"
+    
   },
   "repository": {
     "type": "git",
