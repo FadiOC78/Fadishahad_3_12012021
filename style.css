@@ -110,7 +110,7 @@ Animation
     fill: #ffffff;
   }
   to {
-    fill: #9356dc;
+    fill: #FF79DA ;
   }
 }
 @keyframes apparition-delay {
@@ -329,8 +329,8 @@ body {
 }
 .footer__lien {
   text-decoration: none;
-  color: #ffffff;
-}
+  color: #ffffff;}
+
 .footer svg {
   fill: #ffffff;
   margin-right: 10px;
