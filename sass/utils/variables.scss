@@ -1,0 +1,159 @@
+$colour-primary: #9356dc;
+$colour-primary-active: #f5edff;
+$colour-secondary: #ff79da;
+$colour-third: #99e2d0;
+$colour-third-dark: #518578;
+
+$color-white: #ffffff;
+$color-light: #f6f6f6;
+$color-middle: #eaeaea;
+$color-dark: #353535;
+
+$color-shadow: #cecece;
+$color-shadow-hover: #818181;
+$color-logo: #7e7e7e;
+
+.b {
+  border: red solid 1px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  &--center {
+    justify-content: center;
+  }
+  &--align {
+    align-items: center;
+  }
+  &--bot {
+    justify-content: flex-end;
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  &--center {
+    justify-content: center;
+    align-items: center;
+  }
+  &--align {
+    align-items: center;
+  }
+  &--between {
+    justify-content: space-between;
+  }
+}
+
+.flex-functioning {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box-shadow {
+  box-shadow: 5px 5px 5px $color-shadow;
+  &:hover {
+    box-shadow: 5px 5px 5px $color-shadow-hover;
+  }
+}
+
+.padding-topbot {
+  &-20 {
+    padding: 20px 0;
+  }
+  &-15 {
+    padding: 15px 0;
+  }
+}
+
+/*
+Animation
+*/
+
+.loading-spinner {
+  background-color: $color-dark;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  z-index: 999;
+  opacity: 0;
+  animation: loading 1.5s ease-out forwards;
+}
+
+@keyframes loading {
+  0%,
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.logo-loading {
+  position: sticky;
+  margin-top: 20%;
+  animation: rotation-logo 1.5s ease 1;
+}
+
+@keyframes rotation-logo {
+  0% {
+    transform: rotateY(0deg);
+  }
+  40% {
+    transform: rotateY(360deg);
+  }
+  80% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: scale(25);
+    z-index: -1;
+  }
+}
+
+.remplissage-heart {
+  cursor: pointer;
+  &:hover {
+    animation: remplir 0.5s ease-in forwards;
+  }
+}
+
+@keyframes remplir {
+  from {
+    fill: $color-white;
+  }
+  to {
+    fill: $colour-primary;
+  }
+}
+
+@mixin apparition-delay($delay) {
+  animation: apparition-delay 0.8s $delay ease-out forwards;
+}
+
+@keyframes apparition-delay {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes validation-anim {
+  0% {
+    transform: rotateZ(360deg);
+  }
+  100% {
+    transform: rotateZ(0deg);
+  }
+}

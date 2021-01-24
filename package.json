@@ -1,0 +1,17 @@
+{
+  "name": "fadishahad_3_12012021",
+  "version": "1.0.0",
+  "description": "Oh my food projet",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:.public/css/style.css --style expanded",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FadiOC78/Fadishahad_3_12012021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
