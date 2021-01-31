@@ -155,7 +155,12 @@ body {
   background-color: #ffffff;
 }
 .header__heading {
-  padding: 20px 0 12px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 .header__heading--margin-right {
   margin-right: 45px;
@@ -219,10 +224,10 @@ body {
   overflow: hidden;
 }
 .menu__bouton:hover h3 {
-  width: 270px;
+  width: 200px;
 }
 .menu__bouton:hover p {
-  width: 238px;
+  width: 150px;
 }
 .menu__bouton:hover div.menu__part-price {
   transform: translateX(-50px);
