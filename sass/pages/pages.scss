@@ -13,7 +13,11 @@
 }
 
 /*functioning*/
-
+.container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
 .functioning {
   padding: 20px;
   background-color: $color-white;
@@ -24,7 +28,7 @@
     background-color: $color-light;
     border-radius: 12px;
     margin: 25px 0 25px 10px;
-    padding: 25px 0;
+    padding: 25px;
     cursor: pointer;
     transition: ease 0.4s;
     &:hover {
@@ -68,6 +72,7 @@
     margin: 20px 0;
     background-color: $color-white;
     transition: ease 0.4s;
+    
   }
   &__image {
     border-radius: 12px 12px 0 0;

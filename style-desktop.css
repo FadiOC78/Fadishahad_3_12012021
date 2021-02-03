@@ -17,5 +17,21 @@
       flex-wrap: wrap;
       justify-content: center;
     }
+    .container {
+      max-width: 1280px;
+      margin: auto;
+      position: relative;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      padding: 10px 19px
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 2rem;
+      row-gap: 1.25rem
+      
+  }
 }
 
